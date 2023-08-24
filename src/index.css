@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landing-page::before {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  background-size: cover;
+  background-position-y: 10%;
+  filter: blur(30px);
+}
+
+.swiper-button-next::after {
+  padding: 6px 4px;
+  position: absolute;
+  right: -10px;
+  color: black;
+  font-weight: 800;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.swiper-button-prev::after {
+  padding: 6px 4px;
+  position: absolute;
+  left: -10px;
+  color: black;
+  font-weight: 800;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.spotlight {
+  background: radial-gradient(circle at 52% 50%, rgba(204, 0, 0, 0) 10%, #0e1213 50%);
+}
+
+.slide {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, #0e1213 70%);
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  z-index: -1;
+  background-image: url(https://www.sound.xyz/_next/image?url=https%3A%2F%2Fd2i9ybouka0ieh.cloudfront.net%2Fartist-uploads%2F23d3b091-b365-4047-b2a3-327f101be4ad%2FRELEASE_COVER_IMAGE%2F2497527-newImage.png&w=384&q=75);
+  background-size: cover;
+}
+
+.recent-drops {
+  grid-template-columns: auto auto auto auto auto;
+}
+
+@media screen and (max-width:calc(1600px - 1px)) {
+  .recent-drops {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media screen and (max-width:calc(1280px - 1px)) {
+  .recent-drops {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width:calc(768px - 1px)) {
+  .recent-drops {
+    grid-template-columns: auto auto;
+  }
+
+  .spotlight {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, #0e1213 75%);
+  }
+}
+
+@media screen and (max-width:calc(480px - 1px)) {
+  .recent-drops {
+    grid-template-columns: auto;
+  }
+}
