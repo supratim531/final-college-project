@@ -36,6 +36,16 @@ function Carousel() {
               <SwiperSlide key={index} className="rounded-3xl bg-red-400">
                 <div style={{ backgroundImage: `url(${backgroundImage})` }} className="w-full h-[420px] rounded-3xl bg-cover">
                   <div className="spotlight rounded-3xl h-full w-[100%]">
+                    <div className="h-full px-5 md:px-10 flex justify-between">
+                      <div className="w-full md:w-[55%] py-12 md:py-16 lg:py-0 flex items-end md:items-center">
+                        <div className="w-full flex gap-x-4">
+                          <button className="px-3 py-2 sm:px-4 sm:py-3 md:px-6 md:py-5 rounded-md bg-white">
+                            <i className="fa-solid fa-play ml-0.5 text-xl sm:text-2xl md:text-3xl"></i>
+                          </button>
+                          <h1 className="font-extrabold truncate sm:text-2xl md:text-4xl text-white">Wishing You Well</h1>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

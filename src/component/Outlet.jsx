@@ -16,7 +16,7 @@ function Outlet() {
     "https://img.freepik.com/free-photo/nature-beauty-captured-tranquil-scene-mountain-peak-reflection-generative-ai_188544-12745.jpg?size=626&ext=jpg&ga=GA1.1.1038686110.1692890733&semt=ais"
   ];
 
-  const [backgroundImage, setBackgroundImage] = useState(`url(${backgroundImages[0]})`);
+  const [backgroundImage, setBackgroundImage] = useState(null);
 
   let value = {
     backgroundImages,
@@ -28,12 +28,13 @@ function Outlet() {
       return e.selectorText === ".landing-page::before";
     });
 
-    landingPageBefore[0].style.backgroundImage = backgroundImage;
+    const currentBackgroundImage = backgroundImage ? backgroundImage : `url(${backgroundImages[0]})`;
+    landingPageBefore[0].style.backgroundImage = currentBackgroundImage;
   }, [backgroundImage]);
 
   return (
     <RootContext.Provider value={value}>
-      <div id="test" className="relative landing-page mt-16 sm:mt-0 overflow-x-hidden before:h-[215px] sm:before:h-[240px] before:duration-300 before:scale-150">
+      <div className="landing-page relative mt-16 sm:mt-0 overflow-x-hidden before:h-[215px] sm:before:h-[240px] before:duration-300 before:scale-150">
         <div className="container mx-auto">
           <div className="relative section-carousel w-full">
             <div className="py-5 mx-6 flex flex-col gap-y-4">

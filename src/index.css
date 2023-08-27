@@ -16,6 +16,19 @@ code {
 @tailwind components;
 @tailwind utilities;
 
+.slide {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, #0e1213 70%);
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  z-index: -1;
+  background-size: cover;
+}
+
 .landing-page::before {
   content: "";
   width: 100%;
@@ -48,21 +61,6 @@ code {
 
 .spotlight {
   background: radial-gradient(circle at 52% 50%, rgba(204, 0, 0, 0) 10%, #0e1213 50%);
-}
-
-.slide {
-  position: relative;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, #0e1213 70%);
-}
-
-.slide::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 70%;
-  z-index: -1;
-  background-image: url(https://www.sound.xyz/_next/image?url=https%3A%2F%2Fd2i9ybouka0ieh.cloudfront.net%2Fartist-uploads%2F23d3b091-b365-4047-b2a3-327f101be4ad%2FRELEASE_COVER_IMAGE%2F2497527-newImage.png&w=384&q=75);
-  background-size: cover;
 }
 
 .recent-drops {
