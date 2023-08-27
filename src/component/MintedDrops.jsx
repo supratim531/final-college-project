@@ -78,7 +78,7 @@ function MintedDrops() {
                                 avatar={"after:bg-[url(https://www.sound.xyz/_next/image?url=https%3A%2F%2Fd2i9ybouka0ieh.cloudfront.net%2Fartist-uploads%2F2082be4d-5303-42a3-8b44-9d9bcd9b76b8%2FRELEASE_COVER_IMAGE%2F7715268-newImage.png&w=384&q=75)]"}
                               />
                             </div>
-                            <div className="text-xs font-semibold truncate text-white">Utsav Chatterjee</div>
+                            <div className="text-xs font-semibold truncate text-white">Supratim Majumder</div>
                           </div>
                           <div className="text-[12px] text-gray-400/70">minted 1 edition</div>
                         </div>
