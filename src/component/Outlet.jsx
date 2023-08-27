@@ -48,7 +48,7 @@ function Outlet() {
                         twRounded={"rounded-md"}
                         skeletonTwRounded={"before:rounded-md"}
                         // avatar={"https://www.sound.xyz/_next/image?url=https%3A%2F%2Fd16zqvkniqf1rn.cloudfront.net%2Fplaceholders%2Favatars%2Fv2%2F7.jpg&w=64&q=75"}
-                        avatar={"https://www.sound.xyz/_next/image?url=https%3A%2F%2Fd2i9ybouka0ieh.cloudfront.net%2Fartist-uploads%2F2082be4d-5303-42a3-8b44-9d9bcd9b76b8%2FRELEASE_COVER_IMAGE%2F7715268-newImage.png&w=384&q=75"}
+                        avatar={"after:bg-[url(https://www.sound.xyz/_next/image?url=https%3A%2F%2Fd2i9ybouka0ieh.cloudfront.net%2Fartist-uploads%2F2082be4d-5303-42a3-8b44-9d9bcd9b76b8%2FRELEASE_COVER_IMAGE%2F7715268-newImage.png&w=384&q=75)]"}
                       />
                     </div>
                   </div>
