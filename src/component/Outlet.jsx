@@ -24,9 +24,21 @@ function Outlet() {
   };
 
   useEffect(() => {
-    let landingPageBefore = Array.from(document.styleSheets[2].cssRules).filter(e => {
+    let allCssRules = [];
+
+    Array.from(document.styleSheets).forEach(e => {
+      allCssRules.push(Array.from(e.cssRules));
+    });
+
+    allCssRules = allCssRules.flatMap(e => e);
+
+    const landingPageBefore = allCssRules.filter(e => {
       return e.selectorText === ".landing-page::before";
     });
+
+    // let landingPageBefore = Array.from(document.styleSheets[2].cssRules).filter(e => {
+    //   return e.selectorText === ".landing-page::before";
+    // });
 
     const currentBackgroundImage = backgroundImage ? backgroundImage : `url(${backgroundImages[0]})`;
     landingPageBefore[0].style.backgroundImage = currentBackgroundImage;
