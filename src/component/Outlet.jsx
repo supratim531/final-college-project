@@ -17,6 +17,7 @@ function Outlet() {
   ];
 
   const [backgroundImage, setBackgroundImage] = useState(null);
+  const [landingPageBefore, setLandingPageBefore] = useState(null);
 
   let value = {
     backgroundImages,
@@ -24,24 +25,29 @@ function Outlet() {
   };
 
   useEffect(() => {
-    let allCssRules = [];
+    let tempLandingPageBefore = null;
 
-    Array.from(document.styleSheets).forEach(e => {
-      allCssRules.push(Array.from(e.cssRules));
-    });
+    if (!landingPageBefore) {
+      console.log("dhukche");
 
-    allCssRules = allCssRules.flatMap(e => e);
+      Array.from(document.styleSheets).filter(e => {
+        let temp = Array.from(e.cssRules).find(ele => {
+          return ele.selectorText === ".landing-page::before";
+        });
 
-    const landingPageBefore = allCssRules.filter(e => {
-      return e.selectorText === ".landing-page::before";
-    });
+        if (temp) {
+          setLandingPageBefore(temp);
+          tempLandingPageBefore = temp;
+        }
 
-    // let landingPageBefore = Array.from(document.styleSheets[2].cssRules).filter(e => {
-    //   return e.selectorText === ".landing-page::before";
-    // });
+        return temp;
+      });
+    }
 
-    const currentBackgroundImage = backgroundImage ? backgroundImage : `url(${backgroundImages[0]})`;
-    landingPageBefore[0].style.backgroundImage = currentBackgroundImage;
+    if (landingPageBefore)
+      landingPageBefore.style.backgroundImage = backgroundImage ? backgroundImage : `url(${backgroundImages[0]})`;
+    else
+      tempLandingPageBefore.style.backgroundImage = backgroundImage ? backgroundImage : `url(${backgroundImages[0]})`;
   }, [backgroundImage]);
 
   return (

@@ -60,7 +60,7 @@ function MintedDrops() {
                   <div className={`slide relative w-full h-[480px] xs:h-[320px] sm:h-[360px] rounded-xl overflow-hidden before:hover:scale-125 before:duration-300 ${slideImage}`}>
                     <div className="h-full flex flex-col justify-between">
                       <div className="px-1.5 py-3 flex justify-end">
-                        <div className="px-2 py-0.5 pt-1 font-semibold xs:text-[10.5px] sm:text-[12.5px] rounded-full backdrop-blur-lg text-white bg-black/30">Starts Aug 30, 12:30PM</div>
+                        <div className="px-2 py-0.5 pt-1 font-semibold xs:text-[10.5px] sm:text-[12.5px] rounded-full backdrop-blur-lg text-white bg-black/30">Ends in 4d</div>
                       </div>
                       <div className="px-2">
                         <div className="px-1 mb-3 text-white">
@@ -78,7 +78,7 @@ function MintedDrops() {
                                 avatar={"after:bg-[url(https://www.sound.xyz/_next/image?url=https%3A%2F%2Fd2i9ybouka0ieh.cloudfront.net%2Fartist-uploads%2F2082be4d-5303-42a3-8b44-9d9bcd9b76b8%2FRELEASE_COVER_IMAGE%2F7715268-newImage.png&w=384&q=75)]"}
                               />
                             </div>
-                            <div className="text-xs font-semibold truncate text-white">Supratim Majumder</div>
+                            <div className="text-xs font-semibold truncate text-white">Utsav Chatterjee</div>
                           </div>
                           <div className="text-[12px] text-gray-400/70">minted 1 edition</div>
                         </div>
