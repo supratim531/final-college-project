@@ -1,73 +1,19 @@
-# final-college-project
-This is last project for college
+# rythmXchange v2.0@beta
+The official NFT based decentralized music application (our final college project)
 
-# Getting Started with Create React App
+> ⚠️ **Caution:** Make sure you have MetaMask wallet in your Desktop's browser (also use MetaMask App's browser for mobile devices). Without MetaMask it is useless, you better don't use it.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Links
+- ### [frontend](https://rythmxchange.vercel.app/) (vercel free hosting)
+- ### [backend](https://rythmxchange.onrender.com) (onrender free hosting)
 
-## Available Scripts
+## Smart Contracts
 
-In the project directory, you can run:
+- ### [MusicNFT](https://sepolia.etherscan.io/address/0x0688432dFd9E71BE9AA76574e43211430aEF5e86#code)<br>
+![Our MusicNFT Contract](https://github.com/supratim531/rythmXchange/assets/91423964/9c5019bd-6135-4024-b82a-86fe0dc8b471)<br><br>
+- ### [Business](https://sepolia.etherscan.io/address/0x3e3C80B52289584b530Ac726ffbEEAc69aBD8499#code)<br>
+![Our Business Contract](https://github.com/supratim531/rythmXchange/assets/91423964/1dd072e5-adc7-4170-9fea-b4a3d9a58cd2)
 
-### `npm start`
+## Introduction Video
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Watch the video](https://github.com/supratim531/rythmXchange/assets/91423964/69f0861d-de38-4634-bcf8-856e59a80ad5)](https://github.com/supratim531/rythmXchange/assets/91423964/82112ada-65a8-4783-8f89-dc3bb2e18166)
