@@ -112,7 +112,7 @@ const useMetaMaskAuth = () => {
         ethereum.removeListener("accountsChanged", handleAccountsChanged);
       };
     } else {
-      alert("please install MetaMask first to use this application");
+      alert("please install MetaMask first to use this application (N.B.: use SepoliaETH as currency)");
     }
   }, [ethereum]);
 
